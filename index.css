@@ -17,3 +17,7 @@ h1::first-letter {
 p {
     color: red;
 }
+
+p:nth-of-type(odd) {
+    color: pink;
+}
