@@ -1,9 +1,3 @@
-html {
-    box-sizing: border-box;
-}
-/* This snippet will universally apply the border-box
-model to all elements and their pseudo-elements (that's the reason for :before and
-:after) */
-*, *::before, *::after {
-    box-sizing: inherit;
+[href] {
+    color: green
 }
