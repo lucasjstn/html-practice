@@ -1,11 +1,14 @@
 section {
-    background-color: red;
-    overflow: hidden;
-    /* height: 3vh; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div {
-    width: 25%;
-    float: left;
+    flex-basis: 25%;
 }
 
+div:nth-child(odd) {
+    background-color: black;
+    color: white;
+    flex-basis: 25%;
+}
