@@ -8,21 +8,16 @@ element but not of the <head> element. -->
     <title>HTML DOCUMENT STRUCTURE</title>
   </head>
   <body>
-    <div>
-      <h1>heading</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        dolore velit excepturi quam, natus placeat corrupti repellendus
-        voluptate. Quia ratione impedit sapiente nisi necessitatibus ipsum
-        facere doloribus voluptas similique iusto.
-      </p>
+    <div class="parent"></div>
 
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat qui
-        rerum excepturi ipsa aut facere, magni corrupti dolorum eius, iste
-        beatae illum repellendus praesentium omnis provident deleniti aperiam,
-        quas maxime.
-      </p>
-    </div>
+    <script>
+      const anchorElement = document.createElement("a");
+      anchorElement.href = "#";
+
+      anchorElement.textContent = "Clica em mim";
+
+      const p = document.querySelector(".parent");
+      p.appendChild(anchorElement);
+    </script>
   </body>
 </html>
