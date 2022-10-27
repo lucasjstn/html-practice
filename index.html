@@ -7,7 +7,14 @@
   </head>
   <body>
     <h1>Adding styles</h1>
-    <p>First paragraph</p>
+    <p class="boldElement">First paragraph</p>
     <p>Second paragraph</p>
+
+    <script>
+      const boldElement = document.querySelector(".boldElement");
+
+      boldElement.style.color = "blue";
+      console.log(boldElement.style);
+    </script>
   </body>
 </html>

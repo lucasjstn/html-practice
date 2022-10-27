@@ -5,10 +5,10 @@ h1 {
     padding-bottom: 6px;
 }
 
-p:first-of-type {
+/* p:first-of-type {
     color: blue;
     text-decoration: line-through;
-}
+} */
 
 p {
     color: red;
