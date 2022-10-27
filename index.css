@@ -19,6 +19,10 @@ p {
     color: red;
 }
 
+.element {
+    color: green;
+}
+
 p:nth-of-type(even) {
     color: pink;
 }
