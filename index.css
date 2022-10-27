@@ -1,25 +1,11 @@
-header, nav, aside, section, footer, article {
-    background: #659494;
-    border-radius: 5px;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 30px;
-    margin-bottom: 20px;
+section {
+    background-color: red;
+    overflow: hidden;
+    /* height: 3vh; */
 }
 
-header::before,
-nav::before,
-article::before, aside::before, footer::before, section::before {
-    content: '<';
-} 
-
-header::after,
-nav::after,
-article::after, aside::after, footer::after, section::after {
-    content: '>';
-} 
-
-
+div {
+    width: 25%;
+    float: left;
+}
 
