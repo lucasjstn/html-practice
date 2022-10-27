@@ -1,5 +1,7 @@
-#login {
-    background-color: black;
-    width: 100px;
-    height: 100px;
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
