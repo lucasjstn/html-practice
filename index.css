@@ -1,9 +1,18 @@
-div.media {
-    display: block;
-    width: 100%;
-    float: left;
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.hide {
-    display: none !important;
+h1 {
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+#pageWrapper {
+    background-color:  #eeeae4 ;
+    padding: 16px;
+}
+
+.full-page {
+    min-height: 100vh;
 }
