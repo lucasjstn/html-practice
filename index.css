@@ -1,3 +1,3 @@
-p::before {
-    content: '- the game'
+p::after {
+    content: ' - the game'
 }
