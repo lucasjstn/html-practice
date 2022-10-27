@@ -5,6 +5,10 @@ h1 {
     padding-bottom: 6px;
 }
 
+h1::first-letter {
+    font-size: 5rem;
+}
+
 /* p:first-of-type {
     color: blue;
     text-decoration: line-through;
