@@ -1,3 +1,8 @@
 [href] {
     color: green
 }
+
+[accesskey=double] {
+    color: purple;
+    text-decoration: dotted;
+}
