@@ -14,10 +14,11 @@ h1::first-letter {
     text-decoration: line-through;
 } */
 
+/* example of selection an html element by the tag */
 p {
     color: red;
 }
 
-p:nth-of-type(odd) {
+p:nth-of-type(even) {
     color: pink;
 }
