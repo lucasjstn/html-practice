@@ -2,7 +2,7 @@
     color: green
 }
 
-[accesskey$=as] {
+[accesskey*=ble] {
     color: purple;
     text-decoration: dotted;
 }
