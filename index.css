@@ -1,3 +1,9 @@
-a:active {
-    background-color: blue;
-}
+a:link, a:visited {
+    color: deepskyblue;
+    text-decoration: none;
+   }
+
+   a:hover, a:active {
+    color: hotpink;
+    text-decoration: dashed underline;
+   }
