@@ -1,23 +1,3 @@
-<!-- The <html> element is the parent of <head> and <body>, which (as children of the same
-parent) are siblings. <body> has one child, a <div> element, and that has three children:
-an <h1> element and two <p> elements. The <h1> element is a descendant of the <body>
-element but not of the <head> element. -->
+<!DOCTYPE html>
 
-<html>
-  <head>
-    <title>HTML DOCUMENT STRUCTURE</title>
-  </head>
-  <body>
-    <div class="parent"></div>
-
-    <script>
-      const anchorElement = document.createElement("a");
-      anchorElement.href = "#";
-
-      anchorElement.textContent = "Clica em mim";
-
-      const p = document.querySelector(".parent");
-      p.appendChild(anchorElement);
-    </script>
-  </body>
-</html>
+<!-- with the doctype the browser will parse html document in quirks mode which may cause your webpage to render in unexpected ways -->
