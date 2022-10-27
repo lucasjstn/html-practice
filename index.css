@@ -5,5 +5,5 @@ div.media {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
