@@ -20,3 +20,18 @@ nav::after,
 article::after, aside::after, footer::after {
     content: '>';
 } 
+
+article {
+    float: left;
+    margin-right: 20px;
+    width: 60%;
+}
+
+aside {
+    float: left;
+    width: calc(40% - 140px);
+}
+
+footer {
+    clear: both;
+}
