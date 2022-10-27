@@ -1,4 +1,4 @@
-header, nav, aside, footer, article {
+header, nav, aside, section, footer, article {
     background: #659494;
     border-radius: 5px;
     color: white;
@@ -11,27 +11,15 @@ header, nav, aside, footer, article {
 
 header::before,
 nav::before,
-article::before, aside::before, footer::before {
+article::before, aside::before, footer::before, section::before {
     content: '<';
 } 
 
 header::after,
 nav::after,
-article::after, aside::after, footer::after {
+article::after, aside::after, footer::after, section::after {
     content: '>';
 } 
 
-article {
-    float: left;
-    margin-right: 20px;
-    width: 60%;
-}
 
-aside {
-    float: left;
-    width: calc(40% - 140px);
-}
 
-footer {
-    clear: both;
-}
