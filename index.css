@@ -1,14 +1,12 @@
-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 div {
-    flex-basis: 25%;
+    background: #659494;
+    color: white;
+    text-align: center;
+    margin: 15px;
+    padding: 100px;
 }
 
-div:nth-child(odd) {
-    background-color: black;
-    color: white;
-    flex-basis: 25%;
+section {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
