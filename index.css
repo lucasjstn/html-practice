@@ -9,10 +9,21 @@
 }
 
 .breadcrumb li:after {
-    content: '/';
+    content: '/ ';
     margin-left: 20px;
 }
 
 .breadcrumb li:last-child::after {
     content: '';
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: grey;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: black;
+
 }
