@@ -25,3 +25,16 @@
     line-height: 1.5;
 }
 
+.original-price {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.current-price span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.saving {
+    color: green;
+}
