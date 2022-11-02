@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    margin: 30px 0;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.intro h1 {
+    margin-bottom: 15px;
+}
+
+.intro p {
+    line-height: 1.5 ;
+}
