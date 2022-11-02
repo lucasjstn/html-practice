@@ -12,3 +12,7 @@
     content: '/';
     margin-left: 20px;
 }
+
+.breadcrumb li:last-child::after {
+    content: '';
+}
