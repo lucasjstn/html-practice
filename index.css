@@ -38,3 +38,11 @@ input:invalid {
     width: auto;
 }
 
+button {
+    background: green;
+    border: 0;
+    color: white;
+    width: 224px;
+    padding: 10px;
+    text-transform: uppercase;
+}
