@@ -20,32 +20,29 @@
             <label for="last_name">Last Name: <span>*</span></label>
             <input type="text" name="lastname" id="last_name" required />
           </div>
-
-          <div class="single-output">
-            <label for="address">Adress: <span>*</span></label>
-            <input type="text" name="address" required id="address" />
+        </div>
+        <div class="double-input">
+          <div>
+            <label for="postcode">Postcode: <span>*</span></label>
+            <input type="text" name="postcode" required id="postcode" />
           </div>
 
-          <div class="double-output">
-            <div>
-              <label for="postcode">Postcode: <span>*</span></label>
-              <input type="text" name="postcode" required id="postcode" />
-            </div>
-
-            <div>
-              <label for="country">Country:</label>
-              <div class="select-wrapper">
-                <select name="country" id="country">
-                  <option value="england">England</option>
-                  <option value="scotland">Scotland</option>
-                  <option value="ireland">Ireland</option>
-                  <option value="wales">Wales</option>
-                </select>
-              </div>
+          <div>
+            <label for="country">Country:</label>
+            <div class="select-wrapper">
+              <select name="country" id="country">
+                <option value="england">England</option>
+                <option value="scotland">Scotland</option>
+                <option value="ireland">Ireland</option>
+                <option value="wales">Wales</option>
+              </select>
             </div>
           </div>
         </div>
-
+        <div class="single-input">
+          <label for="address">Adress: <span>*</span></label>
+          <input type="text" name="address" required id="address" />
+        </div>
         <h2>Shipping method</h2>
         <div class="checkbox">
           <input
