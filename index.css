@@ -50,3 +50,22 @@ select {
     position: absolute;
     z-index: -1;
 }
+
+.single-input input {
+    width: 439px;
+}
+
+.double-input {
+    display: flex;
+}
+
+.double-input div {
+    margin-right: 15px;
+}
+
+.checkbox input {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+
