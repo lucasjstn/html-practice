@@ -1,12 +1,21 @@
-select {
-    background: transparent;
+div {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 0;
+    padding: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input, textarea {
     border: 0;
     border-bottom: 1px solid gray;
-    box-shadow: none;
-    color: #666;
     padding: 10px 0;
     width: 200px;
-    -webkit-appearance: none;
 }
 
 .select-wrapper {
@@ -15,7 +24,7 @@ select {
 }
 
 .select-wrapper::after {
-    content: '>';
+    content: '<>';
     color: #666;
     font-size: 14px;
     top: 8px;
@@ -23,4 +32,14 @@ select {
     transform: rotate(90deg);
     position: absolute;
     z-index: -1;
+}
+
+button {
+    background: #999;
+    border: 0;
+    color: white;
+    font-size: 12px;
+    height: 50px;
+    width: 200px;
+    text-transform: uppercase;
 }

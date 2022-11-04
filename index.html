@@ -2,11 +2,7 @@
 <html>
   <head>
     <title>Exercise 4.02: Creating a Form with Validation Styling</title>
-    <style>
-      body {
-        font-family: arial, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <form action="url_to_send_form_data" method="post">
@@ -32,6 +28,19 @@
             required
           />
         </div>
+        <div>
+          <label for="textarea">Message:</label>
+          <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="select-wrapper">
+          <select name="" id="countries">
+            <option value="england">England</option>
+            <option value="scotland">Scotland</option>
+            <option value="ireland">Ireland</option>
+            <option value="wales">Wales</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
       </fieldset>
     </form>
   </body>
