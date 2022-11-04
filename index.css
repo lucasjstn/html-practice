@@ -31,3 +31,10 @@ input:valid {
 input:invalid {
     border: 2px solid red;
 }
+
+.checkbox input {
+    float: left;
+    margin-right: 10px;
+    width: auto;
+}
+
