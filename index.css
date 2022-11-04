@@ -69,3 +69,12 @@ select {
     margin-right: 10px;
 }
 
+button {
+    background: green;
+    border: 0;
+    color: white;
+    width: 224px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
