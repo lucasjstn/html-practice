@@ -43,3 +43,12 @@ button {
     width: 200px;
     text-transform: uppercase;
 }
+
+input:valid, textarea:valid {
+    border-bottom-color: green;
+}
+
+input:invalid, textarea:invalid {
+    border-bottom-color: red;
+}
+
