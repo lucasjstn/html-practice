@@ -8,3 +8,19 @@ select {
     width: 200px;
     -webkit-appearance: none;
 }
+
+.select-wrapper {
+    position: relative;
+    width: 200px;
+}
+
+.select-wrapper::after {
+    content: '>';
+    color: #666;
+    font-size: 14px;
+    top: 8px;
+    right: 0%;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -1;
+}
