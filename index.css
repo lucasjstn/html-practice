@@ -23,3 +23,21 @@ fieldset div {
 label {
     font-weight: 600;
 }
+
+fieldset input {
+    width: 200px;
+}
+
+button {
+    text-transform: uppercase;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border: 0;
+
+}
+
+.checkbox {
+    margin: 0;
+    padding: 0;
+}
