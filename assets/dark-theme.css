@@ -54,3 +54,14 @@ header.site-header h1 a {
     color: #EDC8AD;
 
 }
+
+header.site-header nav .menu, 
+header.site-header nav li a {
+    color: #AAE8FF;
+}
+
+.blog .site-header, 
+.single-post .site-header {
+    background: #001655;
+}
+
