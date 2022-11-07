@@ -45,3 +45,12 @@ a:active {
 .content-area {
     background-color: #000;
 }
+
+header.site-header h1 {
+    color: #EDC8AD;
+}
+
+header.site-header h1 a {
+    color: #EDC8AD;
+
+}
