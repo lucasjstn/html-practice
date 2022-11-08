@@ -78,3 +78,20 @@ header.site-header nav li a {
 .single-post .site-header {
     background: hsl(205, 100%, 20%);
 }
+
+article h1 {
+    color: hsl(205, 50%, 80%);
+}
+
+article .content {
+    color: hsl(0, 0%, 60%);
+}
+
+footer.site-footer {
+    color: hsl(205, 60%, 80%);
+    background: hsl(205, 100%, 20%);
+}
+
+footer.site-footer a {
+    color: hsl(205, 60%, 80%);
+}
