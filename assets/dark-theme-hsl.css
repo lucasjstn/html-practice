@@ -10,3 +10,15 @@ textarea {
     color: hsl(0, 0%, 100%);
 }
 
+pre {
+    background: hsl(0, 0%, 7%);
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted hsl(0, 0%, 60%);
+}
+
+body {
+    background-color: hsl(0, 100%, 45%);
+}
