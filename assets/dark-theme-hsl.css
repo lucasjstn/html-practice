@@ -52,3 +52,29 @@ a:focus,
 a:active {
     color: hsl(225, 75%, 60%);
 }
+
+.content-area {
+    background: hsl(205, 20%, 20%);
+}
+
+.widget-area h2 {
+    padding-left: 20px;
+}
+
+.widget-area ul {
+    padding-left: 30px;
+}
+
+header.site-header h1 {
+    color: hsl(205, 50%, 80%);
+}
+
+header.site-header nav.menu,
+header.site-header nav li a {
+    color: hsl(195, 100%, 80%);
+}
+
+.blog .site-header,
+.single-post .site-header {
+    background: hsl(205, 100%, 20%);
+}
