@@ -1,102 +1,92 @@
-<!-- Exercise 6.02: Using Media Queries to Detect Device Orientation -->
+<!-- Exercise 6.03: Generating a Printable Version of a Web Page Using CSS Media
+Queries -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Exercise 6.02: Device Orientation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercise 6.03: Print Styles</title>
+    <style>
+      header,
+      section,
+      aside,
+      footer {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        background: lightgrey;
+        margin-bottom: 20px;
+      }
+      main {
+        display: flex;
+      }
+      section {
+        text-align: left;
+        flex: 1 1 auto;
+        margin-right: 20px;
+      }
+      section p {
+        margin: 0 0 20px;
+      }
+      section img {
+        float: left;
+        margin: 0 10px 10px 0;
+      }
+      aside {
+        flex: 0 0 200px;
+      }
+    </style>
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
 
-    header {
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-    }
-
-    nav li {
-      display: inline-block;
-      margin-right: 5px;
-      padding-right: 5px;
-      border-right: 1px solid black;
-    }
-
-    nav li a {
-      color: black;
-      text-decoration: none;
-    }
-
-    nav li a:hover {
-      text-decoration: underline;
-    }
-
-    nav li:last-child {
-      border-right: 0;
-      padding-right: 0;
-      margin-right: 0;
-    }
-
-    article,
-    footer,
-    nav {
-      padding: 10px;
-    }
-
-    article h1,
-    article p {
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background-color: black;
-      text-align: center;
-      color: white;
-    }
-  </style>
   <body>
     <header>
-      <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="" />
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Nav #1</a></li>
-          <li><a href="">Nav #2</a></li>
-          <li><a href="">Nav #3</a></li>
-        </ul>
-      </nav>
+      Header
+      <!-- contains website identity (logo), useful to print -->
     </header>
-    <article>
-      <h1>Video Review</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        scelerisque, sapien at tincidunt finibus, mauris purus tincidunt orci,
-        non cursus lorem lectus ac urna. Ut non porttitor nisl. Morbi id nisi
-        eros.
-      </p>
-      <p>
-        Donec et purus sit amet odio interdum accumsan eleifend ut sapien.
-        Praesent bibendum turpis non nisl elementum, sed ornare purus semper. In
-        vel sagittis felis.
-      </p>
-      <p>
-        Suspendisse vitae scelerisque est. Aenean tempus congue lacus vehicula
-        congue. Vivamus congue ligula nec purus malesuada volutpat.
-      </p>
-      <p>
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia Curae; Curabitur sit amet mattis urna. Morbi id luctus purus,
-        sodales facilisis odio. Orci varius natoque penatibus et magnis dis
-        parturient montes, nascetur ridiculus mus.
-      </p>
-    </article>
-
+    <main>
+      <section>
+        <img
+          src="https://dummyimage.com/200x100/fff/000&text=Demo+Image"
+          alt="Demo Image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi
+          arcu, venenatis a egestas eu, euismod eu erat. Integer finibus
+          porttitor mauris, nec imperdiet enim faucibus eget. Nunc a massa vel
+          eros suscipit sollicitudin quis sit amet diam. Sed eget aliquam arcu,
+          nec porta velit. Donec semper turpis tellus, at laoreet elit euismod
+          bibendum. Curabitur convallis lorem massa, eget condimentum arcu
+          pretium a. Proin sit amet turpis sapien.
+        </p>
+        <img
+          src="https://dummyimage.com/200x100/fff/000&text=Demo+Image"
+          alt="Demo Image"
+        />
+        <p>
+          In sit amet iaculis erat, ullamcorper placerat nunc. Sed venenatis vel
+          ligula eget laoreet. Etiam laoreet enim sed justo porttitor facilisis.
+          Aliquam nec vehicula justo, a tristique velit. Nam velit metus,
+          condimentum vitae eleifend vitae, venenatis eget sapien. Vivamus
+          luctus dui at elit sollicitudin hendrerit. Vestibulum vitae diam est.
+          Proin placerat nunc vel erat sodales, eget pellentesque dolor
+          sollicitudin. Nam aliquam ligula erat, ut imperdiet metus venenatis a.
+          Quisque tincidunt sem id risus euismod tempor. Sed dignissim, tortor
+          at laoreet gravida, augue odio consectetur tellus, ac semper lorem
+          orci eget ipsum. Ut odio sapien, malesuada ut pellentesque congue,
+          fermentum nec libero. Pellentesque habitant morbi tristique senectus
+          et netus et malesuada fames ac turpis egestas. Nunc mattis, lacus id
+          efficitur suscipit, dui odio suscipit dui, eget ullamcorper leo purus
+          a diam.
+        </p>
+        <!-- main website content for printing -->
+      </section>
+      <aside>
+        Sidebar
+        <!--  contains adverts, not required for printing -->
+      </aside>
+    </main>
     <footer>
-      <p>Website by Author Name</p>
+      Footer
+      <!-- contains navigation, not required for printing -->
     </footer>
   </body>
 </html>
