@@ -4,6 +4,7 @@ Web Page -->
 <html lang="en">
   <head>
     <title>Video store home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
       * {
         margin: 0;
@@ -126,6 +127,60 @@ Web Page -->
 
       .saving {
         color: green;
+      }
+
+      @media (max-width: 425px) and (min-width: 1px) {
+        body {
+          background-color: pink;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+        }
+
+        header {
+          display: flex;
+          flex-direction: column;
+          /* place-content: center; */
+        }
+
+        header img {
+          /* width: 100%; */
+          background-color: black;
+          /* width: 100%; */
+        }
+
+        nav {
+          margin: 0px;
+        }
+
+        nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* place-content: center; */
+        }
+
+        .breadcrumb {
+          font-size: 3.5vw;
+          display: flex;
+          justify-content: center;
+        }
+
+        .product-cards {
+          display: flex;
+          flex-direction: column;
+          /* grid-template-columns: auto auto auto auto; */
+          margin-bottom: 30px;
+        }
+
+        .product-card {
+          display: grid;
+          /* display: flex; */
+          /* flex-direction: column; */
+          /* border: 1px solid black; */
+          /* padding: 15px; */
+          /* margin: 10px; */
+        }
       }
     </style>
   </head>
