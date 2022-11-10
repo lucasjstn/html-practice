@@ -1,223 +1,49 @@
+<!-- Exercise 6.02: Using Media Queries to Detect Device Orientation -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Video store home page</title>
-    <style type="text/css">
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: sans-serif;
-        margin: 0 auto;
-        width: 1200px;
-      }
-
-      header {
-        align-items: center;
-        display: flex;
-        margin-bottom: 25px;
-      }
-
-      nav {
-        margin-left: 30px;
-      }
-
-      .product-cards {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        margin-bottom: 30px;
-      }
-
-      nav ul {
-        list-style: none;
-      }
-
-      nav a {
-        color: white;
-        background-color: black;
-        font-weight: bold;
-        display: block;
-        padding: 15px;
-        text-align: center;
-        text-decoration: none;
-      }
-
-      nav a:hover {
-        background: darkgray;
-        text-decoration: underline;
-      }
-
-      .breadcrumb {
-        display: flex;
-        list-style: none;
-      }
-
-      .breadcrumb li {
-        padding: 10px;
-      }
-
-      .breadcrumb li:after {
-        content: "/";
-        margin-left: 20px;
-      }
-
-      .breadcrumb li:last-child:after {
-        content: "";
-      }
-
-      .breadcrumb a {
-        color: black;
-        text-decoration: none;
-      }
-
-      .breadcrumb a:hover {
-        text-decoration: underline;
-      }
-
-      .intro {
-        margin: 30px 0;
-        padding-left: 10px;
-        width: 50%;
-      }
-
-      .intro h1 {
-        margin-bottom: 15px;
-      }
-
-      .intro p {
-        line-height: 1.5;
-      }
-
-      .product-card {
-        display: inline-block;
-        border: 1px solid black;
-        padding: 15px;
-        margin: 10px;
-      }
-
-      .product-card a {
-        color: black;
-        text-decoration: none;
-      }
-
-      .product-card img {
-        width: 100%;
-      }
-
-      .product-card h2 {
-        margin: 30px 0 15px;
-      }
-
-      .product-card p {
-        line-height: 1.5;
-      }
-
-      .original-price {
-        color: grey;
-        text-transform: uppercase;
-      }
-
-      .current-price span {
-        font-weight: bold;
-        text-decoration: underline;
-      }
-
-      .saving {
-        color: green;
-      }
-
-      @media (min-width: 480px) {
-        nav ul {
-          display: flex;
-        }
-        nav li {
-          flex: 1 1 auto;
-        }
-      }
-
-      @media only screen and (min-width: 768px) {
-        nav a {
-          font-size: 20px;
-        }
-      }
-    </style>
-
-    <link rel="stylesheet" href="index.css" type="text/css" />
+    <title>Exercise 6.02: Device Orientation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-
   <body>
     <header>
       <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="" />
       <nav>
         <ul>
-          <li><a href="">Videos to rent</a></li>
-          <li><a href="">Videos to buy</a></li>
-          <li><a href="">Used DVDs</a></li>
-          <li><a href="">Offers</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Nav #1</a></li>
+          <li><a href="">Nav #2</a></li>
+          <li><a href="">Nav #3</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <ol class="breadcrumb">
-        <li><a href="">Home</a></li>
-        <li><a href="">Used DVDs</a></li>
-        <li>Less than £10</li>
-      </ol>
-    </section>
-    <section class="intro">
-      <h1>Videos less than £10</h1>
+    <article>
+      <h1>Video Review</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum non
-        purus quis vestibulum. Pellentesque ultricies quam lacus, ut tristique
-        sapien tristique et.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        scelerisque, sapien at tincidunt finibus, mauris purus tincidunt orci,
+        non cursus lorem lectus ac urna. Ut non porttitor nisl. Morbi id nisi
+        eros.
       </p>
-    </section>
-    <section class="product-cards">
-      <div class="product-card">
-        <img
-          src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1"
-          alt=""
-        />
-        <h2><a href="">Video title 1</a></h2>
-        <p class="original-price">RRP: £18.99</p>
-        <p class="current-price">Price you pay <span>£9.99</span></p>
-        <p class="saving">Your saving £9</p>
-      </div>
+      <p>
+        Donec et purus sit amet odio interdum accumsan eleifend ut sapien.
+        Praesent bibendum turpis non nisl elementum, sed ornare purus semper. In
+        vel sagittis felis.
+      </p>
+      <p>
+        Suspendisse vitae scelerisque est. Aenean tempus congue lacus vehicula
+        congue. Vivamus congue ligula nec purus malesuada volutpat.
+      </p>
+      <p>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Curabitur sit amet mattis urna. Morbi id luctus purus,
+        sodales facilisis odio. Orci varius natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus.
+      </p>
+    </article>
 
-      <div class="product-card">
-        <img
-          src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+2"
-          alt=""
-        />
-        <h2><a href="">Video title 2</a></h2>
-        <p class="original-price">RRP: £18.99</p>
-        <p class="current-price">Price you pay <span>£9.99</span></p>
-        <p class="saving">Your saving £9</p>
-      </div>
-
-      <div class="product-card">
-        <img
-          src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+3"
-          alt=""
-        />
-        <h2><a href="">Video title 3</a></h2>
-        <p class="original-price">RRP: £18.99</p>
-        <p class="current-price">Price you pay <span>£9.99</span></p>
-        <p class="saving">Your saving £9</p>
-      </div>
-
-      <div class="product-card">
-        <img
-          src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+4"
-          alt=""
-        />
-        <h2><a href="">Video title 4</a></h2>
-        <p class="original-price">RRP: £18.99</p>
-        <p class="current-price">Price you pay <span>£9.99</span></p>
-        <p class="saving">Your saving £9</p>
-      </div>
-    </section>
+    <footer>
+      <p>Website by Author Name</p>
+    </footer>
   </body>
 </html>
