@@ -34,6 +34,19 @@ Queries -->
       aside {
         flex: 0 0 200px;
       }
+
+      @media only print {
+        footer,
+        aside {
+          display: none;
+        }
+
+        header,
+        section {
+          margin-right: 0;
+          background: transparent;
+        }
+      }
     </style>
   </head>
 
