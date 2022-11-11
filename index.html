@@ -63,6 +63,20 @@
       const duration = document.getElementById("duration");
       const played = document.getElementById("played");
       audioPlayer.dataset.state = "paused";
+
+      playButton.addEventListener("click", () => {
+        if (audioPlayer.dataset.state === "paused") {
+          audio1.play();
+          audioPlayer.dataset.state = "playing";
+        }
+      });
+
+      pauseButton.addEventListener("click", () => {
+        if (audioPlayer.dataset.state === "playing") {
+          audio1.pause();
+          audioPlayer.dataset.state = "paused";
+        }
+      });
     </script>
   </body>
 </html>
