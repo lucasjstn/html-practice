@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="utf-8">
- <title>Exercise 7.02: Styling Controls</title>
- </head>
- <body>
-
- </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 7.02: Styling Controls</title>
+  </head>
+  <body>
+    <div id="audio-player" class="audio-player">
+      <audio src="media/track1.mp3" id="audio-1">
+        Your browser does not support the HTML5 <code>audio</code> element
+      </audio>
+      <div class="audio-controls">
+        <button id="play-btn" class="button">Play</button>
+        <button id="pause-btn" class="button">Pause</button>
+        <div class="audio-status">
+          <span id="played">00:00</span>/ <span id="duration">00:00</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
