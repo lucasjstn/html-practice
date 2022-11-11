@@ -6,7 +6,7 @@
 
     <style>
       .audio-player,
-      .audio-controls {
+      .audio-controls .audio-controls .button {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
@@ -23,6 +23,22 @@
         max-width: 240px;
         padding: 8px;
       }
+
+      .audio-controls .button {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #4717f6;
+        border-radius: 16px;
+        cursor: pointer;
+        outline: none;
+        padding: 4px 16px;
+        text-transform: uppercase;
+      }
+
+      [data-state="playing"] #play-btn,
+      [data-state="paused"] #pause-btn {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -38,5 +54,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const audioPlayer = document.getElementById("audio-player");
+      const audio1 = document.getElementById("audio-1");
+      const playButton = document.getElementById("play-btn");
+      const pauseButton = document.getElementById("pause-btn");
+      const duration = document.getElementById("duration");
+      const played = document.getElementById("played");
+    </script>
   </body>
 </html>
