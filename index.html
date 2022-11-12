@@ -77,6 +77,22 @@
           audioPlayer.dataset.state = "paused";
         }
       });
+
+      audio1.addEventListener("loadedmetadata", () => {
+        duration.textContent = formatTime(audio1.duration);
+      });
+
+      audio1.addEventListener("timeupdate", () => {
+        played.textContent = formatTime(audio1.currentTime);
+      });
+
+      function formatTime(time) {
+        const minutes = Math.floor(time / 60);
+        const seconds = Math.round(time) % 60;
+        return `${minutes < 10 ? "0" + minutes : minutes}:${
+          seconds < 10 ? "0" + seconds : seconds
+        }`;
+      }
     </script>
   </body>
 </html>
