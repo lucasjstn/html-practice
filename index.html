@@ -4,5 +4,19 @@
     <meta charset="utf-8" />
     <title>Cleaned</title>
   </head>
-  <body></body>
+  <body>
+    <canvas id="canvasArea" width="500" height="500"></canvas>
+
+    <script>
+      const canvasElement = document.getElementById("canvasArea");
+
+      const context = canvasElement.getContext("2d");
+      context.fillStyle = "blue";
+      context.strokeStyle = "orange";
+      context.lineWidth = 4;
+      context.rect(50, 50, 150, 100);
+      context.fill();
+      context.stroke();
+    </script>
+  </body>
 </html>
