@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Cleaned</title>
+    <style>
+      canvas {
+        border: 1px solid gray;
+      }
+    </style>
+    <title>Exercise 7.05: Drawing Shapes</title>
   </head>
   <body>
-    <canvas id="canvasArea" width="500" height="500"></canvas>
-
+    <canvas width="320" height="240" id="canvasArea"></canvas>
     <script>
-      const canvasElement = document.getElementById("canvasArea");
-
-      const context = canvasElement.getContext("2d");
-      context.fillStyle = "red";
-      context.arc(50, 50, 25, 0, Math.PI * 2, false);
-      context.fill();
-
-      setTimeout(() => {
+      function drawFrame(context) {
         context.clearRect(0, 0, canvasElement.width, canvasElement.height);
-      }, 4000);
+        // start drawing here
+      }
+      const canvasElement = document.getElementById("canvasArea");
+      if (canvasElement.getContext) {
+        const context = canvasElement.getContext("2d");
+        drawFrame(context);
+      }
     </script>
   </body>
 </html>
