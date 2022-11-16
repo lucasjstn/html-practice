@@ -6,7 +6,7 @@
         border: 1px solid gray;
       }
     </style>
-    <title>Exercise 7.05: Drawing Shapes</title>
+    <title>Exercise 7.06: Gradients</title>
   </head>
   <body>
     <canvas width="320" height="240" id="canvasArea"></canvas>
@@ -31,7 +31,10 @@
       }
 
       function drawFloor(context) {
-        context.fillStyle = "#cffcffef";
+        const gradient = context.createLinearGradient(0, 160, 0, 240);
+        gradient.addColorStop(0.05, "#cffcffcf");
+        gradient.addColorStop(0.65, "#cffcff");
+        context.fillStyle = gradient;
         context.fillRect(0, 160, canvasElement.width, 80);
       }
 
