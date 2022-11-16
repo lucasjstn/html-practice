@@ -11,10 +11,23 @@
   <body>
     <canvas width="320" height="240" id="canvasArea"></canvas>
     <script>
+      function drawSky(context) {
+        context.fillStyle = "#030339";
+        context.fillRect(0, 0, canvasElement.width, canvasElement.height);
+      }
+
+      function drawIgloo(context) {
+        context.fillStyle = "white";
+        context.arc(120, 160, 60, 0, Math.PI * 2, false);
+        context.fill();
+      }
+
       function drawFrame(context) {
         context.clearRect(0, 0, canvasElement.width, canvasElement.height);
-        // start drawing here
+        drawSky(context);
+        drawIgloo(context);
       }
+
       const canvasElement = document.getElementById("canvasArea");
       if (canvasElement.getContext) {
         const context = canvasElement.getContext("2d");
