@@ -6,7 +6,7 @@
         border: 1px solid gray;
       }
     </style>
-    <title>Exercise 7.06: Gradients</title>
+    <title>Exercise 7.07: Animated canvas</title>
   </head>
   <body>
     <canvas width="320" height="240" id="canvasArea"></canvas>
@@ -56,6 +56,10 @@
         drawSky(context);
         drawIgloo(context);
         drawFloor(context);
+
+        requestAnimationFrame(function () {
+          drawFrame(context);
+        });
       }
 
       const canvasElement = document.getElementById("canvasArea");
