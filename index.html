@@ -23,6 +23,11 @@
         context.fillRect(160, 135, 30, 50); //igloo door
         context.strokeStyle = "#cffcff";
         context.lineWidth = 4;
+        context.fillStyle = "#030339";
+        context.beginPath();
+        context.arc(194, 160, 23, 0, Math.PI * 2, false);
+        context.fill();
+        context.stroke();
       }
 
       function drawFrame(context) {
