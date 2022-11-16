@@ -30,10 +30,16 @@
         context.stroke();
       }
 
+      function drawFloor(context) {
+        context.fillStyle = "#cffcff";
+        context.fillRect(0, 160, canvasElement.width, 80);
+      }
+
       function drawFrame(context) {
         context.clearRect(0, 0, canvasElement.width, canvasElement.height);
         drawSky(context);
         drawIgloo(context);
+        drawFloor(context);
       }
 
       const canvasElement = document.getElementById("canvasArea");
