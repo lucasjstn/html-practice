@@ -11,14 +11,18 @@
   <body>
     <canvas width="320" height="240" id="canvasArea"></canvas>
     <script>
+      let count = 0;
+
       function drawSky(context) {
+        const countLoop = count % canvasElement.width;
+        const size = 1 + 3 * countLoop;
         const gradient = context.createRadialGradient(
           120,
           160,
           0,
           120,
           160,
-          160
+          size
         );
 
         gradient.addColorStop(0.3, "#030339");
@@ -52,6 +56,8 @@
       }
 
       function drawFrame(context) {
+        count++;
+
         context.clearRect(0, 0, canvasElement.width, canvasElement.height);
         drawSky(context);
         drawIgloo(context);
