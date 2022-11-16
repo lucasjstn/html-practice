@@ -12,7 +12,20 @@
     <canvas width="320" height="240" id="canvasArea"></canvas>
     <script>
       function drawSky(context) {
-        context.fillStyle = "#030339";
+        const gradient = context.createRadialGradient(
+          120,
+          160,
+          0,
+          120,
+          160,
+          160
+        );
+
+        gradient.addColorStop(0.3, "#030339");
+        gradient.addColorStop(0.6, "#00F260");
+        gradient.addColorStop(1, "#030339");
+
+        context.fillStyle = gradient;
         context.fillRect(0, 0, canvasElement.width, canvasElement.height);
       }
 
