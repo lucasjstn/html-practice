@@ -25,6 +25,7 @@
         left: 0;
         right: 0;
         transition: 250ms;
+        color: whitesmoke;
       }
 
       .top-navigation-link:before {
@@ -35,7 +36,7 @@
       }
 
       .top-navigation-link:after {
-        bottom: 100px;
+        top: 28px;
         filter: blur(5px);
         opacity: 0;
         background-color: firebrick;
@@ -48,10 +49,15 @@
       }
 
       .top-navigation-link:hover:after {
-        bottom: -10px;
+        top: 0;
         filter: blur(0);
         opacity: 1;
-        /* animation going top and comming from the top to bottom -10 */
+      }
+
+      .top-navigation-menu {
+        display: flex;
+        text-transform: uppercase;
+        font-family: arial;
       }
     </style>
   </head>
