@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS transition with multiple values</title>
+    <style>
+      /* Let's put our style in here */
+      body {
+        background-color: silver;
+      }
+
+      .top-navigation-link {
+        height: 28px;
+        position: relative;
+        width: 225px;
+        display: inline-block;
+      }
+
+      .top-navigation-link:before,
+      .top-navigation-link:after {
+        text-align: center;
+        line-height: 28px;
+        content: attr(title);
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: 250ms;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-navigation-menu">
+      <a href="" class="top-navigation-link" title="Top Search Engine"></a>
+      <a href="" class="top-navigation-link" title="Free Coding Resource"></a>
+      <a href="" class="top-navigation-link" title="Free PRO Coding"></a>
+    </nav>
+  </body>
+</html>
