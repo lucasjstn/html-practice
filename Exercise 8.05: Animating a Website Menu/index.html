@@ -28,13 +28,29 @@
       }
 
       .top-navigation-link:before {
-        top: -10px;
-        left: -10px;
-        color: greenyellow;
+        top: 0;
+        filter: blur(0);
+        opacity: 1;
+        background: cadetblue;
       }
 
       .top-navigation-link:after {
-        color: red;
+        top: 28px;
+        filter: blur(5px);
+        opacity: 0;
+        background-color: firebrick;
+      }
+
+      .top-navigation-link:hover:before {
+        top: -28px;
+        filter: blur(5px);
+        opacity: 0;
+      }
+
+      .top-navigation-link:hover:after {
+        top: 0;
+        filter: blur(0);
+        opacity: 1;
       }
     </style>
   </head>
