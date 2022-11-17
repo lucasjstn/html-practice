@@ -2,28 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Exercise 8.02: Enhanced Control in CSS Transitions</title>
+    <title>Exercise 8.03: CSS Transition Performance</title>
     <style>
       /* Let's put our style in here */
       .transition-me {
-        padding: 1rem;
-        color: chocolate;
-        background: ghostwhite;
+        height: 100px;
+        background: lightskyblue;
+        border: 10px solid wheat;
+        transition-duration: 0.5s;
+        cursor: pointer;
       }
       .transition-me:hover {
-        /* those properties will be animated to */
-
-        transition-duration: 0.5s, 0.5s, 0.3s;
-        transition-delay: 0s, 0.5, 1s;
-        transition-property: background, color, padding-left;
-        cursor: pointer;
-        background: honeydew;
-        color: purple;
-        padding-left: 2rem;
+        background: orange;
+        font-size: 32px;
+        border-color: teal;
       }
     </style>
   </head>
+  <!--  -->
   <body>
-    <div class="transition-me">CSS transitions enhanced control</div>
+    <div class="transition-me">CSS transitions performance</div>
   </body>
 </html>
