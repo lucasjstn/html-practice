@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS animations preloader</title>
+    <style>
+      /* Let's put our style in here */
+      .preloader-wrapper {
+        border-radius: 16px;
+        height: 32px;
+        overflow: hidden;
+        background-color: dodgerblue;
+      }
+
+      .preloader-bar {
+        height: 100%;
+        background-color: darkgoldenrod;
+        animation: preloader 5s ease-in-out 1s;
+      }
+
+      @keyframes preloader {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 25%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloader-wrapper">
+      <div class="preloader-bar"></div>
+    </div>
+  </body>
+</html>
