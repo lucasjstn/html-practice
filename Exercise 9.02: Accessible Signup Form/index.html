@@ -19,6 +19,28 @@
         font-size: 16px;
         line-height: 1.7778;
       }
+
+      .signup {
+        margin: 1rem;
+      }
+
+      .signup-button {
+        appearance: none;
+        padding: 0.5rem 1rem;
+        background: #7e00f4;
+        color: white;
+        font-size: 1rem;
+        border-radius: 3px;
+        margin: 1rem 0;
+        outline: none;
+        float: right;
+        cursor: pointer;
+      }
+
+      .signup-button:hover,
+      .signup-button:focus {
+        background: #500b91;
+      }
     </style>
   </head>
   <body>
@@ -38,6 +60,8 @@
       <br />
       <label for="confirm-password">Confirm password:</label>
       <input type="password" id="confirm-password" Confirm password />
+      <br />
+      <button type="submit" class="signup-button">Sign-up</button>
     </form>
   </body>
 </html>
