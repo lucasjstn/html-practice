@@ -11,6 +11,22 @@
         top: 150px;
         left: 150px;
       }
+
+      @media (prefers-reducted-motion: no-prefers) {
+        .animation {
+          animation: moveAround 1s 0.3s linear infinite both;
+        }
+      }
+
+      @keyframes moveAround {
+        from {
+          transform: translate(-50px, -50px);
+        }
+
+        to {
+          transform: translate(50px, 100px);
+        }
+      }
     </style>
   </head>
   <body>

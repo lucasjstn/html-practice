@@ -1,0 +1,10 @@
+https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
+
+If you are running the Axe tool on a local file (file://), you may have problems with Axe
+throwing an error. The solution is to do the following:
+
+1. In your browser, navigate to https://chrome.google.com/webstore/category/
+   extensions.
+2. Find the Axe extension (with the heading axe - Web Accessibility Testing).
+3. Click the details button.
+4. Locate the Allow access to file URLs switch and enable it.
