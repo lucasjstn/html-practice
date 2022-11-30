@@ -1,0 +1,10 @@
+@import 'reset';
+header {
+    background: #CCC;
+    a {
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
