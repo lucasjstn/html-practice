@@ -7,7 +7,7 @@ article {
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
   background: #DDD;
-  border-bottom: 1px solid #663399;
+  border-bottom: 1px solid #000;
 }
 
 article:nth-child(odd) {
@@ -17,34 +17,34 @@ article:nth-child(odd) {
 h1 {
   font-size: 24px;
   margin: 10px 0;
-  color: #663399;
+  color: #000;
 }
 
 h2 {
   font-size: 20px;
   margin: 10px 0;
-  color: #663399;
+  color: #000;
 }
 
 p {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 p.primary {
-  color: #663399;
+  color: #000;
 }
 
 p.secondary {
-  color: #D2691E;
+  color: #0000FF;
 }
 
 ul li {
   margin: 0 10px 0 20px;
-  font-size: 14px;
-  color: #CD5C5C;
+  font-size: 16px;
+  color: #FF0000;
 }
 
 ul li:nth-child(even) {
-  color: #D2691E;
+  color: #0000FF;
 }
