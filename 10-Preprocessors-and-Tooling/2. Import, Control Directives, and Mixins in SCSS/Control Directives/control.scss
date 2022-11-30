@@ -1,0 +1,19 @@
+// $debug: true;
+// @if ($debug) {
+//     div {
+//         border: 1px dashed ridge;
+//     }
+// }
+
+$env: 'test';
+div {
+    @if ($env == 'dev') {
+        border: 1px dotted red;
+    } @else if ($env == 'test') {
+        border: 1px dotted yellow;
+    } @else if ($env == 'live') {
+        border: 1px dotted black;
+    } @else {
+        border: none;
+    }
+}
