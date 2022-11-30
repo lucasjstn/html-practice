@@ -1,0 +1,15 @@
+article {
+  background: #ccc;
+}
+
+article p {
+  color: red;
+}
+
+article p a {
+  color: blue;
+}
+
+article p a:hover {
+  text-decoration: underline;
+}

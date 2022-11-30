@@ -1,0 +1,17 @@
+article {
+    background: #ccc;
+    @media (min-width: 768px) {
+        background:#fff;
+    }
+
+    p {
+        color: red;
+        a {
+            color: blue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
