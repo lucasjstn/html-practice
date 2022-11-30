@@ -34,3 +34,33 @@ nav {
         }
     }
 }
+
+article {
+    padding: 10px;
+    h1, p {
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    padding: 10px;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+@media (orientation: landscape) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        margin-left: 20px;
+        
+    }
+
+    article {
+        columns: 100px 2;
+    }
+}
