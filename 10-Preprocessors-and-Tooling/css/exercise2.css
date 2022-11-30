@@ -7,8 +7,21 @@ header {
   text-align: center;
 }
 
+@media (orientation: landscape) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+}
+
 nav {
   padding: 10px;
+}
+
+@media (orientation: landscape) {
+  nav {
+    margin-left: 20px;
+  }
 }
 
 nav ul {
@@ -41,6 +54,12 @@ article {
   padding: 10px;
 }
 
+@media (orientation: landscape) {
+  article {
+    columns: 100px 2;
+  }
+}
+
 article h1, article p {
   margin-bottom: 10px;
 }
@@ -50,17 +69,4 @@ footer {
   background: black;
   text-align: center;
   color: white;
-}
-
-@media (orientation: landscape) {
-  header {
-    display: flex;
-    align-items: center;
-  }
-  nav {
-    margin-left: 20px;
-  }
-  article {
-    columns: 100px 2;
-  }
 }
