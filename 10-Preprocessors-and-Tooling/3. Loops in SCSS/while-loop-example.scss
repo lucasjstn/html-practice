@@ -1,0 +1,7 @@
+$box: 25;
+@while $box > 0 {
+    .box-#{$box} {
+        width: $box + px;
+    }
+    $box: $box - 5;
+}

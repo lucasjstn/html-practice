@@ -1,0 +1,5 @@
+@for $num from 1 through 4 {
+    .col-#{$num} {
+        column-count: $num;
+    }
+}

@@ -1,0 +1,7 @@
+$fruits: apple pear orange kiwi pineapple melon strawberry;
+
+@each $fruit in $fruits {
+    .image-#{$fruit} {
+        background: url("images/#{$fruit}.png") no-repeat;
+    }
+}
