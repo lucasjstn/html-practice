@@ -33,3 +33,43 @@ h1 {
 .team-members .member p {
   padding-bottom: 10px;
 }
+
+.team-members .member-david {
+  background: url(../scss/images/david.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.team-members .member-laura {
+  background: url(../scss/images/laura.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.team-members .member-matt {
+  background: url(../scss/images/matt.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.team-members .member-natalie {
+  background: url(../scss/images/natalie.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.team-members .member-sarah {
+  background: url(../scss/images/sarah.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.team-members .member-steve {
+  background: url(../scss/images/steve.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.team-members .member-tahlia {
+  background: url(../scss/images/tahlia.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.team-members .member-will {
+  background: url(../scss/images/will.jpg) no-repeat;
+  background-size: 100% auto;
+}

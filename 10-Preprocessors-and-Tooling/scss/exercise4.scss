@@ -30,5 +30,15 @@ h1 {
         p {
             padding-bottom: 10px;
         }
+
+        $members: david, laura, matt, natalie, sarah, steve, tahlia, will;
+        
+        @each $member in $members {
+            &-#{$member} {
+                background: url(../scss/images/#{$member}.jpg) no-repeat;
+                background-size: 100% auto;
+            }
+        }
     }
+
 }
