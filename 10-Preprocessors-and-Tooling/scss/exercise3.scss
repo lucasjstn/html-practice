@@ -1,0 +1,13 @@
+@mixin transform($value) {
+    -webkit-transform: rotate($value);
+    // -ms-transform: rotate($value);
+    // transform: rotate($value);
+}
+
+.transform {
+    @include transform(70deg);
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
