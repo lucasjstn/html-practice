@@ -1,9 +1,24 @@
 .transform {
-  -webkit-transform: rotate(70deg);
-  -ms-transform: rotate(70deg);
-  transform: rotate(70deg);
   display: inline-block;
   position: relative;
   top: 100px;
   left: 100px;
+}
+
+.transform1 {
+  -webkit-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+
+.transform2 {
+  -webkit-transform: skewY(-20deg);
+  -ms-transform: skewY(-20deg);
+  transform: skewY(-20deg);
+}
+
+.transform3 {
+  -webkit-transform: scaleY(1.8);
+  -ms-transform: scaleY(1.8);
+  transform: scaleY(1.8);
 }
