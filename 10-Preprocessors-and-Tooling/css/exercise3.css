@@ -1,5 +1,7 @@
 .transform {
   -webkit-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg);
   display: inline-block;
   position: relative;
   top: 100px;

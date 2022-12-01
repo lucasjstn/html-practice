@@ -1,11 +1,22 @@
-@mixin transform($value) {
-    -webkit-transform: rotate($value);
-    // -ms-transform: rotate($value);
-    // transform: rotate($value);
+@mixin transform($property, $value) {
+    @if ($property == 'skewY') {
+        -webkit-transform: skewY($value);
+        -ms-transform: skewY($value);
+        transform: skewY($value);
+    } @else if ($property == 'scaleY') {
+        -webkit-transform: scaleY($value);
+        -ms-transform: scaleY($value);
+        transform: scaleY($value);
+    
+    } @else {
+        -webkit-transform: rotate($value);
+        -ms-transform: rotate($value);
+        transform: rotate($value);
+    }
 }
 
 .transform {
-    @include transform(70deg);
+    @include transform('', 70deg);
     display: inline-block;
     position: relative;
     top: 100px;
