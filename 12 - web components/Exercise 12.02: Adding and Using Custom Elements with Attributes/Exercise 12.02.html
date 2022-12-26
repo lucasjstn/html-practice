@@ -18,6 +18,26 @@
         constructor() {
           super();
           this.textContent = "Headline";
+
+          if (this.hasAttribute("type")) {
+            this.setIcon(this.type);
+          }
+        }
+
+        get type() {
+          return this.getAttribute("type");
+        }
+
+        set type(newValue) {
+          this.setAttribute("type", newValue);
+          this.setIcon(this.type);
+        }
+        setIcon() {
+          if (type === "cats") {
+            this.textContent = "🐱" + this.textContent + "🐱";
+          } else if (type === "dogs") {
+            this.textContent = "🐶" + this.textContent + "🐶";
+          }
         }
       }
       window.customElements.define("blog-headline", BlogHeadline);
