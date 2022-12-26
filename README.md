@@ -46,6 +46,24 @@ used to change block or element appearance or behavior
 
 
 
+**An element only needs to semantically be related to one block to be maintainable.**
+
+
+
+### Using BEM markup with SCSS
+
+
+
+We can nest BEM elements inside the block with SCSS. For example, if we had the **.nav__list** element, then we could nest it inside a **.nav**
+
+
+
+
+
+
+
+
+
 
 
 
