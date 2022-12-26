@@ -10,8 +10,6 @@ Semantic CSS means naming elements according to what they are.
 
 This is the main entity and is meaningful on its own. This could be a header (.header), navigation (.nav), field (.field), article (.article), and so on.
 
-
-
 #### Element
 
 A child of a block.
@@ -28,8 +26,6 @@ Wouldn't make sense by itself.
 
 .article__paragraph
 
-
-
 #### Modifier
 
 a variation in a block or element
@@ -44,26 +40,25 @@ used to change block or element appearance or behavior
 
 .button--success
 
-
-
 **An element only needs to semantically be related to one block to be maintainable.**
 
-
-
 ### Using BEM markup with SCSS
-
-
 
 We can nest BEM elements inside the block with SCSS. For example, if we had the **.nav__list** element, then we could nest it inside a **.nav**
 
 
 
+#### Structuring Your SCSS into Maintainable Files
 
 
 
+```asdfsdfasdfsdf
+/* Layout File */
+@import '_header';
+@import '_navigation';
+@import '_footer';
+```
 
-
-
-
-
-
+```
+@import "abstracts/_variables";@import "abstracts/_mixins";@import "base/_reset";@import "base/_typography";@import "components/_buttons";@import "layout/_header";@import "layout/_navigation";@import "layout/_footer";
+```
