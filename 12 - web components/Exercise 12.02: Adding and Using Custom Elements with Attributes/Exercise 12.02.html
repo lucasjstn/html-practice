@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 12.02: Creating a Custom Element</title>
+  </head>
+  <body>
+    <main class="blog-posts">
+      <article>
+        <!-- add main-heading here -->
+        <blog-headline type="cats">Blog Post About Kittens</blog-headline>
+        <blog-headline type="dogs">Blog Post About Puppies</blog-headline>
+      </article>
+    </main>
+
+    <script>
+      class BlogHeadline extends HTMLElement {
+        constructor() {
+          super();
+          this.textContent = "Headline";
+        }
+      }
+      window.customElements.define("blog-headline", BlogHeadline);
+    </script>
+  </body>
+</html>
