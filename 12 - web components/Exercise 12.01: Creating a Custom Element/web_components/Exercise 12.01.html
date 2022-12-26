@@ -6,7 +6,20 @@
   </head>
   <body>
     <main class="blog-posts">
-      <article><!-- add main-heading here --></article>
+      <article>
+        <!-- add main-heading here -->
+        <blog-headline />
+      </article>
     </main>
+
+    <script>
+      class BlogHeadline extends HTMLElement {
+        constructor() {
+          super();
+          this.textContent = "Headline";
+        }
+      }
+      window.customElements.define("blog-headline", BlogHeadline);
+    </script>
   </body>
 </html>
