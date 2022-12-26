@@ -1,0 +1,30 @@
+.nav {
+    background: black;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+        flex: 1 1 auto;
+        border-right: 1px solid white;
+    }
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &__link {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+

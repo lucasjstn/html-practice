@@ -1,0 +1,29 @@
+.nav {
+  background: black;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  list-style: none;
+  flex: 1 1 auto;
+  border-right: 1px solid white;
+}
+
+.nav:last-child {
+  border-right: none;
+}
+
+.nav__link {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
