@@ -1,4 +1,79 @@
-## Maintanable CSS
+## 12 - Web Components
+
+
+
+Custom elements, shadow DOM and HTML Templates
+
+
+
+### Custom Elements
+
+
+
+Custom elements let you create your own element types that you can then use on a web page
+
+
+
+To create a custom element, we will need to add it to the custom element registry,  
+which we do with JavaScript
+
+
+
+We can access the CustomElementRegisty object through a property called  
+customElements, which is defined in the global window object
+
+
+
+#### The Define Method
+
+
+
+allow us to register a new custom element
+
+**customElements.define()** with two main arguments and an optional one, name and javascript class that is an element's constructor. The optional argument is **options object** , with its extends property we can extend a built-in element
+
+
+
+#### Naming conventions
+
+for a custom element to be valid, it must have a hyphen somewhere in its name
+
+
+
+#### Unique names
+
+
+
+A custom element name can only be registered once. For example, we cannot definetwo different main-headline elements.
+
+
+
+#### Extends HTMLElement
+
+
+
+```EXtending
+<sub-headline></sub-headline>
+<script>
+  customElements.define(
+    "sub-headline",
+    class SubHeadline extends SVGElement {}
+  );
+</script>
+
+```
+
+```
+
+```
+
+The constructor can extend a subclass of HTMLElement rather than extend HTMLElement. For example, HTMLParagraphElement extends HTMLElement
+
+
+
+
+
+## 11 -  Maintanable CSS
 
 ### Block Element, and Modifier
 
@@ -60,5 +135,33 @@ We can nest BEM elements inside the block with SCSS. For example, if we had the 
 ```
 
 ```
-@import "abstracts/_variables";@import "abstracts/_mixins";@import "base/_reset";@import "base/_typography";@import "components/_buttons";@import "layout/_header";@import "layout/_navigation";@import "layout/_footer";
+      @import "abstracts/_variables";
+      @import "abstracts/_mixins";
+      @import "base/_reset";
+      @import "base/_typography";
+      @import "components/_buttons";
+      @import "layout/_header";
+      @import "layout/_navigation";
+      @import "layout/_footer";
+
 ```
+
+
+
+#### Good Practices for Maintainable CSS
+
+
+
+1. We can make use of the extend functionality in SCSS with the %class-name.
+
+
+
+2. It's worth making sure you avoid "deep nesting," meaning that it shouldn't be necessary to nest more than three levels
+
+3. We should always remain consistent with using quotation marks in our SCSS (and CSS) and not mixing between single and dark quotation marks.
+4. Our SCSS rules should follow a sensible order.
+5. It's worth understanding when we should use the !important flag in CSS
+6. Avoid using ID CSS selectors with your styling rules. These are mainly used in  
+   JavaScript and are too specific and not reusable.
+
+
