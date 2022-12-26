@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>Exercise 12.02: Creating a Custom Element</title>
+
+    <style>
+      .new-post:before {
+        font-weight: bold;
+        content: "⏰ NEW! ⏰";
+      }
+    </style>
   </head>
   <body>
     <main class="blog-posts">
       <article>
         <!-- add main-heading here -->
-        <blog-headline type="cats">Blog Post About Kittens</blog-headline>
+        <blog-headline type="cats" newpost
+          >Blog Post About Kittens</blog-headline
+        >
         <blog-headline type="dogs">Blog Post About Puppies</blog-headline>
       </article>
     </main>
@@ -16,12 +25,15 @@
     <script>
       class BlogHeadline extends HTMLElement {
         constructor() {
+          // console.log(this.getAttribute("type"));
           super();
-          this.textContent = "Headline";
+          // this.textContent = "Headline";
 
           if (this.hasAttribute("type")) {
             this.setIcon(this.type);
           }
+
+          this.newpost = this.hasAttribute("newpost");
         }
 
         get type() {
@@ -32,11 +44,33 @@
           this.setAttribute("type", newValue);
           this.setIcon(this.type);
         }
-        setIcon() {
+        setIcon(type) {
           if (type === "cats") {
             this.textContent = "🐱" + this.textContent + "🐱";
           } else if (type === "dogs") {
             this.textContent = "🐶" + this.textContent + "🐶";
+          }
+        }
+
+        get newpost() {
+          return this.hasAttribute("newpost");
+        }
+
+        set newpost(newValue) {
+          if (newValue) {
+            this.setAttribute("newpost", "");
+          } else {
+            this.removeAttribute("newpost");
+          }
+
+          this.setIsNewPostIcon(this.newpost);
+        }
+
+        setIsNewPostIcon(isNewPost) {
+          if (isNewPost) {
+            this.classList.add("new-post");
+          } else {
+            this.classList.remove("new-post");
           }
         }
       }
