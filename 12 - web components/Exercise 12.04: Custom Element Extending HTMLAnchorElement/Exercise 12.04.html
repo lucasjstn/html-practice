@@ -20,6 +20,15 @@
       </ul>
     </main>
 
-    <script></script>
+    <script>
+      class AnchorInfo extends HTMLAnchorElement {
+        constructor() {
+          super();
+          this._originalText = this.textContent;
+        }
+      }
+
+      window.customElements.define("anchor-info", AnchorInfo, { extends: "a" });
+    </script>
   </body>
 </html>
