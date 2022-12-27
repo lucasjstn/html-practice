@@ -30,6 +30,22 @@
           super();
           this._originalText = this.textContent;
         }
+
+        attributeChangedCallback(name, oldValue, newValue) {
+          if (oldValue === newValue) {
+            return;
+          }
+
+          switch (name) {
+            case "target":
+              this.checkTarget();
+              break;
+          }
+        }
+
+        checkTarget() {
+          this.opensInNewTab = this.target === "_blank";
+        }
       }
 
       window.customElements.define("anchor-info", AnchorInfo, { extends: "a" });
