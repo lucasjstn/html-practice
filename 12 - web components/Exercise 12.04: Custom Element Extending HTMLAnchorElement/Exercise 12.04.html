@@ -8,12 +8,15 @@
     <main class="blog-post">
       <ul class="links">
         <li>
-          <a href="https://www.packtpub.com/web-development"
+          <a is="anchor-info" href="https://www.packtpub.com/web-development"
             >Link that opens in current window</a
           >
         </li>
         <li>
-          <a href="https://www.packtpub.com/free-learning" target="_blank"
+          <a
+            is="anchor-info"
+            href="https://www.packtpub.com/free-learning"
+            target="_blank"
             >Link that opens in a new window.</a
           >
         </li>
@@ -45,6 +48,12 @@
 
         checkTarget() {
           this.opensInNewTab = this.target === "_blank";
+          this.render();
+        }
+
+        render() {
+          const targetState = this.opensInNewTab ? " ⧉" : "";
+          this.textContent = this._originalText + targetState;
         }
       }
 
