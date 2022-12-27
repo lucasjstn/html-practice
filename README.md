@@ -101,11 +101,21 @@ Something else to consider is that oldValue and newValue may not necessarily be 
 
 For example, if we want to create a custom h1 element that restricts the size of the text content, we would set the extends property to "h1"
 
-
-
 ```Example
 window.customElements.define("short-headline", ShortHeadline, { extends: "h1"})
 ```
+
+we would not create a short-headline element; instead, we would use the is attribute on an h1 element
+
+```Example
+<h1 is="short-headline">Headline</h1>
+```
+
+
+
+
+
+
 
 
 
