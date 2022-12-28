@@ -42,6 +42,13 @@
           this.headingElement.textContent = this._heading;
 
           this.shadowRoot.appendChild(this.headingElement);
+          this.styleElement = document.createElement("style");
+          this.styleElement.innerText = `
+          .new-post:after {
+            font-weight: bold;
+            content: "⏰ NEW! ⏰";
+            margin-left: 8px;`;
+          this.shadowRoot.appendChild(this.styleElement);
         }
         connectedCallback() {
           this.setIcon(this.type);
