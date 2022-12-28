@@ -18,6 +18,71 @@
       *:before {
         box-sizing: inherit;
       }
+
+      .grid {
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-columns: 100px 1fr 200px;
+        grid-template-areas: "header header advert" "nav main advert" "footer footer footer";
+      }
+
+      .grid .footer {
+        grid-area: footer;
+      }
+
+      .grid .header {
+        grid-area: header;
+      }
+
+      .grid .main {
+        grid-area: main;
+      }
+
+      .grid .nav {
+        grid-area: nav;
+      }
+
+      .grid .advertisement {
+        grid-area: advert;
+      }
+
+      .header {
+        border-bottom: 1px solid gray;
+      }
+      .nav {
+        border-right: 1px solid gray;
+      }
+
+      .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .nav ul li {
+        width: 100%;
+        margin: 0;
+        padding: 16px 8px;
+      }
+
+      .current {
+        background: lightgray;
+        border-bottom: 1px solid gray;
+      }
+
+      .main {
+        display: block;
+        padding: 16px;
+        overflow: auto;
+      }
+
+      .advertisement {
+        padding: 16px;
+        background: greenyellow; /* background-color: #f2f2f2; */
+        padding: 0 1 rem;
+      }
     </style>
   </head>
   <body>
