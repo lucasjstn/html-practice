@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <template id="ok-button-template">
+      <style>
+        .btn {
+          -webkit-appearance: none;
+          appearance: none;
+          background-color: #3700b3;
+          border: none;
+          border-radius: 2px;
+          color: white;
+          cursor: pointer;
+          min-width: 64px;
+          outline: none;
+          padding: 4px 8px;
+        }
+        .btn:hover {
+          background-color: #6200ee;
+        }
+      </style>
+      <button class="btn ok-btn">OK</button></template
+    >
+    <script>
+      const buttonTemplate = document.getElementById("ok-button-template");
+      document.body.appendChild(buttonTemplate.content.cloneNode(true));
+      document.body.appendChild(buttonTemplate.content.cloneNode(true));
+    </script>
+  </body>
+</html>
