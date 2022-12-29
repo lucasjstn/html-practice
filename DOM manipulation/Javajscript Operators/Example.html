@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+
+  <body>
+    <div>Hello World 1</div>
+
+    <input type="text" />
+
+    <button type="button">Click</button>
+
+    <script>
+      const output = document.querySelector("div");
+
+      const myInput = document.querySelector("input");
+
+      const btn = document.querySelector("button");
+
+      btn.onclick = () => {
+        let val = Number(myInput.value);
+        console.log(typeof val);
+        console.log(isNaN(val));
+        let html = `<div>Results ${val}</div>`;
+
+        if (!isNaN(val)) {
+          html += `<div>Was a number</div>`;
+        } else {
+          html += `<div>NOT a number</div>`;
+        }
+        if (val % 2) {
+          html += `<div>Odd number</div>`;
+        } else {
+          html += `<div>Even number</div>`;
+        }
+
+        html += `<div>${val * 50} = ${val} X 50</div>`;
+        html += `<div>${val / 10} = ${val} / 10</div>`;
+        html += `<div>${val * val} = ${val} X ${val}</div>`;
+
+        output.innerHTML = html;
+      };
+    </script>
+  </body>
+</html>
