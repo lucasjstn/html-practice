@@ -75,15 +75,15 @@
         border-radius: var(--radius);
         margin-top: 0.3rem;
         background: white;
-        /* transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1); */
+        transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
 
-        /* transform: translateY(0.5rem); */
+        transform: translateY(0.5rem);
         visibility: hidden;
         opacity: 0;
       }
 
       .show {
-        /* transform: translateY(0rem); */
+        transform: translateY(0rem);
         visibility: visible;
         opacity: 1;
       }
@@ -125,6 +125,11 @@
       dropdownBtn.addEventListener("click", function (e) {
         e.stopPropagation();
         toggleDropdown();
+      });
+      document.documentElement.addEventListener("click", function (e) {
+        if (dropdownMenu.classList.contains("show")) {
+          toggleDropdown();
+        }
       });
     </script>
   </body>
