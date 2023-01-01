@@ -10,6 +10,89 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+      :root {
+        --main-color: #b3e6f4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+        --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+          rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+        --color: #166e67;
+        --gap: 0.5rem;
+        --radius: 5px;
+      }
+
+      body {
+        margin: 2rem;
+        background: var(--main-color);
+      }
+
+      .btn {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* consegue colocar um espaço entre um elemento e outro, acredito */
+        column-gap: var(--gap);
+        padding: 0.6rem;
+        cursor: pointer;
+        border-radius: var(--radius);
+        border: none;
+        box-shadow: var(--shadow);
+        position: relative;
+      }
+
+      .bx {
+        font-size: 1.1rem;
+      }
+
+      .dropdown a {
+        display: flex;
+        align-items: center;
+        column-gap: var(--gap);
+        padding: 0.8rem 1rem;
+        text-decoration: none;
+        color: black;
+      }
+
+      .dropdown a:hover {
+        background-color: var(--color);
+        color: white;
+      }
+
+      .dropdown {
+        position: absolute;
+        width: 250px;
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+        margin-top: 0.3rem;
+        background: white;
+        /* transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1); */
+
+        /* transform: translateY(0.5rem); */
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .show {
+        /* transform: translateY(0rem); */
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .arrow {
+        transform: rotate(180deg);
+        transition: 0.2s ease;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -29,5 +112,20 @@
         <a href="#settings"><i class="bx bx-cog"></i>Settings</a>
       </div>
     </div>
+
+    <script>
+      const dropdownBtn = document.getElementById("btn");
+      const dropdownMenu = document.getElementById("dropdown");
+      const toggleArrow = document.getElementById("arrow");
+
+      const toggleDropdown = function () {
+        dropdownMenu.classList.toggle("show");
+        toggleArrow.classList.toggle("arrow");
+      };
+      dropdownBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        toggleDropdown();
+      });
+    </script>
   </body>
 </html>
