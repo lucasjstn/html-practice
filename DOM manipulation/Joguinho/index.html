@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        --main-color: red;
+      }
+
+      body {
+        /* background-color: var(--main-color); */
+        display: flex;
+        justify-content: center;
+      }
+      /* #bdadea */
+      /* #BEA2C2 */
+      /* #A37871 */
+      /* #4E4B5C */
+      .container {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <h1 id="title" class="title container__title"></h1>
+      <h3>Options</h3>
+      <div id="options"></div>
+      <input id="submit" type="submit" value="Submit" />
+    </div>
+    <script>
+      const container = document.getElementById("container");
+      container.style.backgroundColor = "#4381C1";
+      container.style.width = "400px";
+      container.style.height = "400px";
+
+      const title = document.getElementById("title");
+      title.innerHTML = "Menu";
+
+      const options = {
+        option1: "Option 1",
+        option2: "Option 2",
+        option3: "Option 3",
+        option4: "Option 4",
+      };
+
+      const optionsDiv = document.getElementById("options");
+
+      const [value, label] = Object.entries(options)[0];
+      //   console.log(label);
+
+      for (const [value, label] of Object.entries(options)) {
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.id = value;
+        input.name = "options";
+        input.value = value;
+
+        const inputLabel = document.createElement("label");
+        inputLabel.htmlFor = value;
+        inputLabel.innerText = label;
+
+        optionsDiv.appendChild(input);
+        optionsDiv.appendChild(inputLabel);
+        optionsDiv.appendChild(document.createElement("br"));
+      }
+
+      const submitButton = document.getElementById("submit");
+      submitButton.addEventListener("click", function () {
+        console.log("sent");
+      });
+    </script>
+  </body>
+</html>
